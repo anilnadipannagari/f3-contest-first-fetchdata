@@ -4,70 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Shopping Cart</title>
 </head>
 <style>
 
 h3
 {
-    position: relative;
+    text-align: center;
     top:20px;
-    left:299px;
-    font-size: 55px;
+    font-size: 50px;
     color: black;
 }
 
 #apidata
 {
-    position: relative;
-    top:104px;
-    height:1050px;
-    width: 300px;
-    display: flex;
-    box-sizing: border-box;
-    flex-direction:row;
-   
-}
-#nav
-{
-    height: 50px;
-    width: 1500px;
-    color:white;
-    background-color:black;
-     font-style: arial;
-    position: fixed;
-    top:0px;
-   
-
-}
-#home
-{
-    position: relative;
-    left:800px;
-    display: flex;
-    justify-content: space-between;
-}
-
-#body
-{
-margin:500px;
-
-}
-/*#content
-{
-    justify-content:space-between;
     display:flex;
-    flex-direction:row;
-}*/
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content:space-around;
+}
+#container{
+    display:flex;
+    background-color:black;
+    justify-content: space-between;
+    height: 20px;
+    padding: 10px;
+}
+#nav,#home
+{
+    color:white;
+    display: flex;
+    
+}
 
 </style>
 <body>
-    <div id="nav">
-      Shopping cart
-      <div id="home">
-          Home Page
-          Cart Page
-      </div>
+   <div id="container" >
+          <div id="nav"><label for="menu-card"> Menu Card</label></div>
+                                                      
+        <div id="home"><label for="home-page">Home Page</label> 
+                     <label for="Cart-Page">Cart Page</label> </div>
     </div>
     <h3 id="name">All Items</h3>
     <div id="apidata"></div>
